@@ -1,0 +1,25 @@
+version: "1.0"
+
+secrets:
+  - name: docker_username
+    type: org
+    key: tmapes/docker_username
+    engine: native
+  - name: docker_password
+    type: org
+    key: tmapes/docker_password
+    engine: native
+
+steps:
+  - name: build image
+    image: target/vela-kaniko:v0.18.0@sha256:e8a34dc03399a6f126d301568811484e4d52eacb85049244866161934ee4bd60
+    secrets: [docker_username, docker_password]
+    parameters:
+      registry: https://index.docker.io/v1/
+      repo: index.docker.io/tjmapes/axe-snmp
+      mirror: docker.mapes.info
+      tags:
+        - "b${VELA_BUILD_NUMBER}-${VELA_BUILD_COMMIT:0:8}"
+    ruleset:
+      event: push
+      branch: main
