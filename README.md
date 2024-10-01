@@ -4,7 +4,7 @@ Queries CraftComputing [AXeDd].
 
 ## Setup
 
-> [!information]
+> [!NOTE]
 > All variables are required
 
 Enviromment Variables:
