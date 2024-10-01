@@ -1,4 +1,4 @@
 services:
   telegraf:
-    image: tjmapes/axe-snmp:b12-123    
+    image: tjmapes/axe-snmp:b3-08589588
     env_file: .telegraf.env
