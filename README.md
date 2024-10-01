@@ -1,6 +1,7 @@
 # axe-snmp
 
-Queries CraftComputing [AXeDd].
+Queries CraftComputing's [Axe Effect](https://github.com/CraftComputing/ProjectAxeEffect) for temperature and humidity.  
+Outputs to InfluxDB v2.
 
 ## Setup
 
@@ -21,12 +22,13 @@ Enviromment Variables:
 The default telegraf metric of `snmp` is output.
 
 Tags:
-    - source: IP/Hostname of the Axe
+- source: IP/Hostname of the Axe
+
 Fields:
-    - temperature_celsius  
-      unit: 4 digit float  
-      ex: 23.45
-    - relative_humidity  
-      unit: 5 digit float  
-      ex: 45.456
+- temperature_celsius\
+  unit: 4 digit float\
+  ex: 23.45
+- relative_humidity\
+  unit: 5 digit float\
+  ex: 45.456
       
