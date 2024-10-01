@@ -18,15 +18,15 @@ Enviromment Variables:
 
 ## Metric
 
-The default telegraf metric of `snmp` is output.\
+The default telegraf metric of `snmp` is output.
 
 Tags:
     - source: IP/Hostname of the Axe
 Fields:
-    - temperature_celsius
-      unit: 4 digit float
+    - temperature_celsius  
+      unit: 4 digit float  
       ex: 23.45
-    - relative_humidity
-      unit: 5 digit float
+    - relative_humidity  
+      unit: 5 digit float  
       ex: 45.456
       
