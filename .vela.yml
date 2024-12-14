@@ -20,6 +20,7 @@ steps:
       mirror: docker.mapes.info
       tags:
         - "b${VELA_BUILD_NUMBER}-${VELA_BUILD_COMMIT:0:8}"
+        - "${VELA_BUILD_COMMIT:0:8}"
     ruleset:
       event: push
       branch: main
