@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 docker.mapes.info/telegraf:1.33.0@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524ef5d1c5a8d913f
+FROM --platform=linux/x86_64 docker.mapes.info/telegraf:1.33.0@sha256:680458a3a0a4697b23a6b2d390991f7afd55589b734a9b1ff76b67045159ccbb
 
 RUN curl -sLo /usr/local/bin/dumb-init https://binrepo.mapes.info/repository/github/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64 \
     && chmod +x /usr/local/bin/dumb-init
