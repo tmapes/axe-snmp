@@ -1,6 +1,6 @@
 services:
   telegraf:
-    image: tjmapes/axe-snmp:fc179cae 
+    image: tjmapes/axe-snmp:fc179cae@sha256:dc64986d481d8cb18802d8206426dccf93b9de6c8807393f22317c405dbaa5b9 
     env_file: .telegraf.env
     deploy:
       replicas: 1
