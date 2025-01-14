@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 telegraf:1.33.1@sha256:af3905668dd440044596ce09ed2bcf559e1830e4c5571e1a485acbf54830dd1a
+FROM --platform=linux/x86_64 telegraf:1.33.1@sha256:84cced6e0e11d12a96c587e0ece887ae3ee6f0c15e52a827890207ae8527de82
 
 RUN curl -sLo /usr/local/bin/dumb-init https://binrepo.mapes.info/repository/github/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64 \
     && chmod +x /usr/local/bin/dumb-init
